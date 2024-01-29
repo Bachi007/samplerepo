@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 
 port=4300;
 app.listen(port,()=>{
-  console.log(`main server running at http://localhost:${port}`);
+  console.log(`hello shankar your main server running at http://localhost:${port}`);
 })
 
 mongo.connect("mongodb+srv://bhaskarasai:2505@cluster0.qcw4xww.mongodb.net/?retryWrites=true&w=majority")
