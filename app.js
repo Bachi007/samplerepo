@@ -21,11 +21,11 @@ app.use(function(req, res, next) {
 
 port=4300;
 app.listen(port,()=>{
-  console.log(`server running at http://localhost:${port}`);
+  console.log(`main server running at http://localhost:${port}`);
 })
 
 mongo.connect("mongodb+srv://bhaskarasai:2505@cluster0.qcw4xww.mongodb.net/?retryWrites=true&w=majority")
-  .then(()=>console.log("connected to DB"))
+  .then(()=>console.log("we are connected to database"))
   .catch((err)=>console.log(err));
 
 app.use(logger('dev'));
